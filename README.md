@@ -1,10 +1,8 @@
 # OmniTurbo Supplementary Videos
 
-Open `index.html` to view the grouped comparison videos. Serve this directory as a static website for online playback.
+Built only from the supplied `omni_turbo_vsa_36case_4tier_eval_20260917`, `teaser_portrait_20261031`, and `wandb` folders.
 
-- Generation: 4 paired scenes.
-- Retake: 36 source/baseline/student cases.
-- Sparsity: 36 prompts across four inference settings.
-- Portrait: 3 samples with original prompts.
-
-Original prompts are shown where supplied; reconstructed scene descriptions and operation-only instructions are explicitly labeled. Web playback copies preserve source aspect ratios and audio. Retake clips are reduced to a maximum dimension of 960 pixels for delivery; original research videos remain unchanged.
+- VSA evaluation: 36 prompts × four attention settings (144 videos).
+- Portrait teaser: 8 videos with supplied original prompts.
+- W&B samples: 8 videos; prompts were not supplied.
+- Contact sheets: 2 supplied silent preview montages.

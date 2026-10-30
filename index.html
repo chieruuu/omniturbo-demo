@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer">
+<meta name="description" content="Anonymous supplementary videos for OmniTurbo: generation, script editing, and sparse attention comparisons.">
+<title>OmniTurbo · Supplementary Videos</title><link rel="stylesheet" href="style.css"><script defer src="data.js"></script><script defer src="app.js"></script>
+</head>
+<body>
+<header class="topbar"><a class="brand" href="#top"><span class="logo">O</span> OmniTurbo</a><span class="review">ANONYMOUS SUPPLEMENTARY MATERIAL</span><a href="#comparisons">Explore videos ↗</a></header>
+<main id="top">
+<section class="hero">
+<p class="eyebrow">JOINT AUDIO–VIDEO GENERATION</p>
+<h1><span>OmniTurbo</span><br>Efficient Omni Diffusion for Joint Audio-Video Generation with NVFP4-Sparsity-Distillation Co-Design</h1>
+<p class="authors">Anonymous Authors</p><p class="intro">See and hear the results. Explore generated motion, paired script edits, and the effect of sparse video attention.</p>
+<div class="pills"><a href="#generation">Generation comparisons</a><a href="#retake">Talking-head retake</a><a href="#sparsity">Dense vs. sparse</a><a href="#showcase">Portrait showcase</a></div>
+<div class="hero-strip" id="hero-strip"></div><p class="hint">All videos retain audio. Use headphones and select one audio track when playing comparisons.</p>
+</section>
+<nav class="section-nav" id="comparisons"><a href="#generation">01 / Generation</a><a href="#retake">02 / Retake</a><a href="#sparsity">03 / Sparsity</a><a href="#showcase">04 / Showcase</a></nav>
+<section id="generation" class="content-section">
+<div class="section-heading"><div><p class="eyebrow">01 / MODEL COMPARISON</p><h2>Generation, side by side.</h2></div><span class="count" id="generation-count"></span></div>
+<p class="section-description">LTX-2 baseline and OmniTurbo outputs, paired by the scene identifiers in the supplied videos. Original sampling prompts and teacher configurations were not included for this group; the display prompts below describe the visible scenes.</p><div class="cards" id="generation-cards"></div>
+</section>
+<section id="retake" class="content-section">
+<div class="section-heading"><div><p class="eyebrow">02 / SCRIPT EDITING</p><h2>A small edit. A complete comparison.</h2></div><span class="count">36 paired cases</span></div>
+<p class="section-description">Compare the conditioned source, official LTX-2.3 FP8 distilled baseline, and OmniTurbo. Cases cover word deletion, insertion, and replacement. The highlighted interval identifies the edit window in the output timeline.</p>
+<div class="toolbar"><label>Operation <select id="retake-task"><option value="all">All operations</option><option value="delete">Delete</option><option value="insert">Insert</option><option value="replace">Replace</option></select></label><label>Collection <select id="retake-set"><option value="all">All collections</option><option value="realworld">Real-world speakers</option><option value="heldout">Held-out talking heads</option></select></label><label class="search-label">Search <input id="retake-search" type="search" placeholder="Search case or edit…"></label></div>
+<p class="hint">Edit instructions follow the case manifest. Exact replacement transcripts are displayed only when present in the source records.</p><div class="cards" id="retake-cards"></div><div class="pagination" id="retake-pagination"></div>
+</section>
+<section id="sparsity" class="content-section">
+<div class="section-heading"><div><p class="eyebrow">03 / ATTENTION ABLATION</p><h2>One student. Four attention settings.</h2></div><span class="count">36 prompts · 144 videos</span></div>
+<p class="section-description">The same student checkpoint, prompt, and seed at four inference sparsity settings. Dense (s = 0.0) is the student's reference configuration; it is not a separate teacher model. These qualitative samples come from the recorded 36-prompt evaluation.</p>
+<div class="toolbar"><label>Category <select id="sparse-category"><option value="all">All categories</option></select></label><label class="search-label">Search prompt <input id="sparse-search" type="search" placeholder="Try snow, blacksmith, or water…"></label><span class="protocol">768 × 512 · 121 frames · 24 fps</span></div>
+<div class="cards" id="sparse-cards"></div><div class="pagination" id="sparse-pagination"></div>
+</section>
+<section id="showcase" class="content-section">
+<div class="section-heading"><div><p class="eyebrow">04 / PORTRAIT GENERATION</p><h2>Motion in full view.</h2></div><span class="count">3 examples · original prompts</span></div>
+<p class="section-description">Full-body portrait-format examples with synchronized audio. Expand each prompt to read the original generation instruction.</p><div class="showcase-grid" id="showcase-cards"></div>
+</section>
+<footer><a class="brand" href="#top"><span class="logo">O</span> OmniTurbo</a><p>Anonymous supplementary videos · No external analytics.</p><a href="#top">Back to top ↑</a></footer>
+</main><div role="status" aria-live="polite" id="status" class="toast" hidden></div>
+</body></html>

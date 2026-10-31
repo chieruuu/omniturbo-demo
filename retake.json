@@ -9,8 +9,14 @@
     "badge": "delete",
     "portrait": false,
     "window": "Edit interval: 8.790–8.890 s",
-    "meta": "Paired editing case 01 · generated audio included",
+    "meta": "Editing case 01 · generated audio included",
     "videos": [
+      {
+        "src": "media/retake/00-source.mp4",
+        "poster": "posters/retake-00-source.jpg",
+        "label": "Source video · conditioned input",
+        "ours": false
+      },
       {
         "src": "media/retake/00-original.mp4",
         "poster": "posters/retake-00-original.jpg",
@@ -35,8 +41,14 @@
     "badge": "insert",
     "portrait": false,
     "window": "Edit interval: 5.920–6.971 s",
-    "meta": "Paired editing case 02 · generated audio included",
+    "meta": "Editing case 02 · generated audio included",
     "videos": [
+      {
+        "src": "media/retake/01-source.mp4",
+        "poster": "posters/retake-01-source.jpg",
+        "label": "Source video · conditioned input",
+        "ours": false
+      },
       {
         "src": "media/retake/01-original.mp4",
         "poster": "posters/retake-01-original.jpg",
@@ -61,8 +73,14 @@
     "badge": "replace",
     "portrait": false,
     "window": "Edit interval: 10.680–11.620 s",
-    "meta": "Paired editing case 03 · generated audio included",
+    "meta": "Editing case 03 · generated audio included",
     "videos": [
+      {
+        "src": "media/retake/02-source.mp4",
+        "poster": "posters/retake-02-source.jpg",
+        "label": "Source video · conditioned input",
+        "ours": false
+      },
       {
         "src": "media/retake/02-original.mp4",
         "poster": "posters/retake-02-original.jpg",
@@ -87,8 +105,14 @@
     "badge": "delete",
     "portrait": false,
     "window": "Edit interval: 4.456–4.556 s",
-    "meta": "Paired editing case 04 · generated audio included",
+    "meta": "Editing case 04 · generated audio included",
     "videos": [
+      {
+        "src": "media/retake/03-source.mp4",
+        "poster": "posters/retake-03-source.jpg",
+        "label": "Source video · conditioned input",
+        "ours": false
+      },
       {
         "src": "media/retake/03-original.mp4",
         "poster": "posters/retake-03-original.jpg",
@@ -113,8 +137,14 @@
     "badge": "insert",
     "portrait": false,
     "window": "Edit interval: 6.860–7.780 s",
-    "meta": "Paired editing case 05 · generated audio included",
+    "meta": "Editing case 05 · generated audio included",
     "videos": [
+      {
+        "src": "media/retake/04-source.mp4",
+        "poster": "posters/retake-04-source.jpg",
+        "label": "Source video · conditioned input",
+        "ours": false
+      },
       {
         "src": "media/retake/04-original.mp4",
         "poster": "posters/retake-04-original.jpg",
@@ -139,8 +169,14 @@
     "badge": "replace",
     "portrait": false,
     "window": "Edit interval: 7.160–8.021 s",
-    "meta": "Paired editing case 06 · generated audio included",
+    "meta": "Editing case 06 · generated audio included",
     "videos": [
+      {
+        "src": "media/retake/05-source.mp4",
+        "poster": "posters/retake-05-source.jpg",
+        "label": "Source video · conditioned input",
+        "ours": false
+      },
       {
         "src": "media/retake/05-original.mp4",
         "poster": "posters/retake-05-original.jpg",
@@ -165,8 +201,14 @@
     "badge": "delete",
     "portrait": false,
     "window": "Edit interval: 4.549–4.649 s",
-    "meta": "Paired editing case 07 · generated audio included",
+    "meta": "Editing case 07 · generated audio included",
     "videos": [
+      {
+        "src": "media/retake/06-source.mp4",
+        "poster": "posters/retake-06-source.jpg",
+        "label": "Source video · conditioned input",
+        "ours": false
+      },
       {
         "src": "media/retake/06-original.mp4",
         "poster": "posters/retake-06-original.jpg",
@@ -191,8 +233,14 @@
     "badge": "insert",
     "portrait": false,
     "window": "Edit interval: 2.560–3.364 s",
-    "meta": "Paired editing case 08 · generated audio included",
+    "meta": "Editing case 08 · generated audio included",
     "videos": [
+      {
+        "src": "media/retake/07-source.mp4",
+        "poster": "posters/retake-07-source.jpg",
+        "label": "Source video · conditioned input",
+        "ours": false
+      },
       {
         "src": "media/retake/07-original.mp4",
         "poster": "posters/retake-07-original.jpg",
@@ -217,8 +265,14 @@
     "badge": "replace",
     "portrait": false,
     "window": "Edit interval: 4.100–4.575 s",
-    "meta": "Paired editing case 09 · generated audio included",
+    "meta": "Editing case 09 · generated audio included",
     "videos": [
+      {
+        "src": "media/retake/08-source.mp4",
+        "poster": "posters/retake-08-source.jpg",
+        "label": "Source video · conditioned input",
+        "ours": false
+      },
       {
         "src": "media/retake/08-original.mp4",
         "poster": "posters/retake-08-original.jpg",
@@ -243,8 +297,14 @@
     "badge": "delete",
     "portrait": false,
     "window": "Edit interval: 2.072–2.172 s",
-    "meta": "Paired editing case 10 · generated audio included",
+    "meta": "Editing case 10 · generated audio included",
     "videos": [
+      {
+        "src": "media/retake/09-source.mp4",
+        "poster": "posters/retake-09-source.jpg",
+        "label": "Source video · conditioned input",
+        "ours": false
+      },
       {
         "src": "media/retake/09-original.mp4",
         "poster": "posters/retake-09-original.jpg",
@@ -269,8 +329,14 @@
     "badge": "insert",
     "portrait": false,
     "window": "Edit interval: 1.180–2.178 s",
-    "meta": "Paired editing case 11 · generated audio included",
+    "meta": "Editing case 11 · generated audio included",
     "videos": [
+      {
+        "src": "media/retake/10-source.mp4",
+        "poster": "posters/retake-10-source.jpg",
+        "label": "Source video · conditioned input",
+        "ours": false
+      },
       {
         "src": "media/retake/10-original.mp4",
         "poster": "posters/retake-10-original.jpg",
@@ -295,8 +361,14 @@
     "badge": "replace",
     "portrait": false,
     "window": "Edit interval: 7.800–8.440 s",
-    "meta": "Paired editing case 12 · generated audio included",
+    "meta": "Editing case 12 · generated audio included",
     "videos": [
+      {
+        "src": "media/retake/11-source.mp4",
+        "poster": "posters/retake-11-source.jpg",
+        "label": "Source video · conditioned input",
+        "ours": false
+      },
       {
         "src": "media/retake/11-original.mp4",
         "poster": "posters/retake-11-original.jpg",
@@ -321,8 +393,14 @@
     "badge": "delete",
     "portrait": false,
     "window": "Edit interval: 5.859–5.959 s",
-    "meta": "Paired editing case 19 · generated audio included",
+    "meta": "Editing case 19 · generated audio included",
     "videos": [
+      {
+        "src": "media/retake/18-source.mp4",
+        "poster": "posters/retake-18-source.jpg",
+        "label": "Source video · conditioned input",
+        "ours": false
+      },
       {
         "src": "media/retake/18-original.mp4",
         "poster": "posters/retake-18-original.jpg",
@@ -347,8 +425,14 @@
     "badge": "insert",
     "portrait": false,
     "window": "Edit interval: 8.720–9.476 s",
-    "meta": "Paired editing case 20 · generated audio included",
+    "meta": "Editing case 20 · generated audio included",
     "videos": [
+      {
+        "src": "media/retake/19-source.mp4",
+        "poster": "posters/retake-19-source.jpg",
+        "label": "Source video · conditioned input",
+        "ours": false
+      },
       {
         "src": "media/retake/19-original.mp4",
         "poster": "posters/retake-19-original.jpg",
@@ -373,8 +457,14 @@
     "badge": "replace",
     "portrait": false,
     "window": "Edit interval: 4.660–5.202 s",
-    "meta": "Paired editing case 21 · generated audio included",
+    "meta": "Editing case 21 · generated audio included",
     "videos": [
+      {
+        "src": "media/retake/20-source.mp4",
+        "poster": "posters/retake-20-source.jpg",
+        "label": "Source video · conditioned input",
+        "ours": false
+      },
       {
         "src": "media/retake/20-original.mp4",
         "poster": "posters/retake-20-original.jpg",
@@ -399,8 +489,14 @@
     "badge": "delete",
     "portrait": true,
     "window": "Edit interval: 1.890–1.990 s",
-    "meta": "Paired editing case 22 · generated audio included",
+    "meta": "Editing case 22 · generated audio included",
     "videos": [
+      {
+        "src": "media/retake/21-source.mp4",
+        "poster": "posters/retake-21-source.jpg",
+        "label": "Source video · conditioned input",
+        "ours": false
+      },
       {
         "src": "media/retake/21-original.mp4",
         "poster": "posters/retake-21-original.jpg",
@@ -425,8 +521,14 @@
     "badge": "insert",
     "portrait": true,
     "window": "Edit interval: 3.800–5.060 s",
-    "meta": "Paired editing case 23 · generated audio included",
+    "meta": "Editing case 23 · generated audio included",
     "videos": [
+      {
+        "src": "media/retake/22-source.mp4",
+        "poster": "posters/retake-22-source.jpg",
+        "label": "Source video · conditioned input",
+        "ours": false
+      },
       {
         "src": "media/retake/22-original.mp4",
         "poster": "posters/retake-22-original.jpg",
@@ -451,8 +553,14 @@
     "badge": "replace",
     "portrait": true,
     "window": "Edit interval: 7.460–8.100 s",
-    "meta": "Paired editing case 24 · generated audio included",
+    "meta": "Editing case 24 · generated audio included",
     "videos": [
+      {
+        "src": "media/retake/23-source.mp4",
+        "poster": "posters/retake-23-source.jpg",
+        "label": "Source video · conditioned input",
+        "ours": false
+      },
       {
         "src": "media/retake/23-original.mp4",
         "poster": "posters/retake-23-original.jpg",
@@ -477,8 +585,14 @@
     "badge": "delete",
     "portrait": true,
     "window": "Edit interval: 5.210–5.310 s",
-    "meta": "Paired editing case 25 · generated audio included",
+    "meta": "Editing case 25 · generated audio included",
     "videos": [
+      {
+        "src": "media/retake/24-source.mp4",
+        "poster": "posters/retake-24-source.jpg",
+        "label": "Source video · conditioned input",
+        "ours": false
+      },
       {
         "src": "media/retake/24-original.mp4",
         "poster": "posters/retake-24-original.jpg",
@@ -503,8 +617,14 @@
     "badge": "insert",
     "portrait": true,
     "window": "Edit interval: 1.660–2.978 s",
-    "meta": "Paired editing case 26 · generated audio included",
+    "meta": "Editing case 26 · generated audio included",
     "videos": [
+      {
+        "src": "media/retake/25-source.mp4",
+        "poster": "posters/retake-25-source.jpg",
+        "label": "Source video · conditioned input",
+        "ours": false
+      },
       {
         "src": "media/retake/25-original.mp4",
         "poster": "posters/retake-25-original.jpg",
@@ -529,8 +649,14 @@
     "badge": "replace",
     "portrait": true,
     "window": "Edit interval: 5.720–6.260 s",
-    "meta": "Paired editing case 27 · generated audio included",
+    "meta": "Editing case 27 · generated audio included",
     "videos": [
+      {
+        "src": "media/retake/26-source.mp4",
+        "poster": "posters/retake-26-source.jpg",
+        "label": "Source video · conditioned input",
+        "ours": false
+      },
       {
         "src": "media/retake/26-original.mp4",
         "poster": "posters/retake-26-original.jpg",
@@ -555,8 +681,14 @@
     "badge": "delete",
     "portrait": true,
     "window": "Edit interval: 3.670–3.770 s",
-    "meta": "Paired editing case 28 · generated audio included",
+    "meta": "Editing case 28 · generated audio included",
     "videos": [
+      {
+        "src": "media/retake/27-source.mp4",
+        "poster": "posters/retake-27-source.jpg",
+        "label": "Source video · conditioned input",
+        "ours": false
+      },
       {
         "src": "media/retake/27-original.mp4",
         "poster": "posters/retake-27-original.jpg",
@@ -581,8 +713,14 @@
     "badge": "insert",
     "portrait": true,
     "window": "Edit interval: 3.280–4.298 s",
-    "meta": "Paired editing case 29 · generated audio included",
+    "meta": "Editing case 29 · generated audio included",
     "videos": [
+      {
+        "src": "media/retake/28-source.mp4",
+        "poster": "posters/retake-28-source.jpg",
+        "label": "Source video · conditioned input",
+        "ours": false
+      },
       {
         "src": "media/retake/28-original.mp4",
         "poster": "posters/retake-28-original.jpg",
@@ -607,8 +745,14 @@
     "badge": "replace",
     "portrait": true,
     "window": "Edit interval: 2.100–2.751 s",
-    "meta": "Paired editing case 30 · generated audio included",
+    "meta": "Editing case 30 · generated audio included",
     "videos": [
+      {
+        "src": "media/retake/29-source.mp4",
+        "poster": "posters/retake-29-source.jpg",
+        "label": "Source video · conditioned input",
+        "ours": false
+      },
       {
         "src": "media/retake/29-original.mp4",
         "poster": "posters/retake-29-original.jpg",
@@ -633,8 +777,14 @@
     "badge": "delete",
     "portrait": true,
     "window": "Edit interval: 0.850–0.950 s",
-    "meta": "Paired editing case 31 · generated audio included",
+    "meta": "Editing case 31 · generated audio included",
     "videos": [
+      {
+        "src": "media/retake/30-source.mp4",
+        "poster": "posters/retake-30-source.jpg",
+        "label": "Source video · conditioned input",
+        "ours": false
+      },
       {
         "src": "media/retake/30-original.mp4",
         "poster": "posters/retake-30-original.jpg",
@@ -659,8 +809,14 @@
     "badge": "insert",
     "portrait": true,
     "window": "Edit interval: 3.300–5.970 s",
-    "meta": "Paired editing case 32 · generated audio included",
+    "meta": "Editing case 32 · generated audio included",
     "videos": [
+      {
+        "src": "media/retake/31-source.mp4",
+        "poster": "posters/retake-31-source.jpg",
+        "label": "Source video · conditioned input",
+        "ours": false
+      },
       {
         "src": "media/retake/31-original.mp4",
         "poster": "posters/retake-31-original.jpg",
@@ -685,8 +841,14 @@
     "badge": "replace",
     "portrait": true,
     "window": "Edit interval: 2.100–2.740 s",
-    "meta": "Paired editing case 33 · generated audio included",
+    "meta": "Editing case 33 · generated audio included",
     "videos": [
+      {
+        "src": "media/retake/32-source.mp4",
+        "poster": "posters/retake-32-source.jpg",
+        "label": "Source video · conditioned input",
+        "ours": false
+      },
       {
         "src": "media/retake/32-original.mp4",
         "poster": "posters/retake-32-original.jpg",

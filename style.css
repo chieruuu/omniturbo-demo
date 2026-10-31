@@ -10,3 +10,20 @@
 #retake-cards .portrait-pair{max-width:700px;margin:auto}
 .section-nav{gap:25px}.section-nav a{white-space:nowrap}
 @media(max-width:760px){#samples-cards{grid-template-columns:minmax(0,1fr)}.section-nav{overflow-x:auto}.video-grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Compact secondary galleries while keeping intrinsic video proportions. */
+#portraits-cards{max-width:900px;margin-inline:auto;align-items:start}
+#portraits-cards video{width:auto;max-width:100%;height:auto;max-height:380px;aspect-ratio:auto;margin-inline:auto}
+#samples-cards{grid-template-columns:repeat(3,minmax(0,1fr));align-items:start}
+#retake-cards .video-grid{max-width:1000px;margin-inline:auto}
+#retake-cards .portrait-pair{max-width:700px}
+#retake-cards video{max-height:none}
+@media(min-width:761px) and (max-width:1000px){#samples-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){
+ #portraits-cards .card{width:100%;max-width:340px;justify-self:center}
+ #portraits-cards video{max-height:360px}
+ #samples-cards{grid-template-columns:minmax(0,1fr)}
+ #samples-cards .card{width:100%;max-width:380px;justify-self:center}
+ #retake-cards .video-grid.three{grid-template-columns:repeat(2,minmax(0,1fr))}
+ #retake-cards .video-grid.three .video-panel:first-child{grid-column:1/-1;width:100%;max-width:240px;justify-self:center}
+}

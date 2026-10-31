@@ -7,6 +7,8 @@ ROOT = Path(__file__).resolve().parent
 WORK = ROOT.parent
 VSA = WORK / "omni_turbo_vsa_36case_4tier_eval_20260917" / "outputs" / "omni_turbo_vsa_retake_36case"
 TEASER = WORK / "teaser_portrait_20261031"
+EXCLUDED_CASES = {0, 10, 14, 21, 23, 25, 27, 29, 31, 35}
+PORTRAIT_ORDER = ["07_contemporary_dance", "04_taichi_garden", "08_drummer_performance", "02_basketball_court", "03_skateboard_promenade"]
 
 
 def poster(path: str) -> str:
@@ -32,6 +34,8 @@ def vsa_data():
     out = []
     for item in manifest:
         n = int(item["case_id"])
+        if n in EXCLUDED_CASES:
+            continue
         stem = f"{n:03d}"
         videos = []
         for folder, label, sparsity in tiers:
@@ -96,23 +100,24 @@ def teaser_data():
                 "label": row["title_en"],
             }
         )
-    return out
+    return sorted((c for c in out if c["id"] in PORTRAIT_ORDER), key=lambda c: PORTRAIT_ORDER.index(c["id"]))
 
 
 def samples_data():
+    titles = ["Blacksmith at work", "Lakeside kayaking", "Wildlife on the savanna", "Vinyl record player", "Performer at a mirror", "Wok cooking", "Café conversation", "Wedding celebration"]
     out = []
     for path in sorted((WORK / "wandb" / "我们的").glob("*.mp4")):
         src = f"media/wandb/{path.name}"
         out.append(
             {
                 "id": f"wandb-{path.stem}",
-                "title": f"W&B sample {path.stem.removeprefix('sample')}",
+                "title": titles[int(path.stem.removeprefix('sample'))],
                 "prompt": "Prompt metadata was not included in the supplied wandb folder.",
                 "promptLabel": "Prompt unavailable",
                 "meta": "wandb · audio included",
                 "src": src,
                 "poster": poster(src),
-                "label": f"W&B sample {path.stem.removeprefix('sample')}",
+                "label": titles[int(path.stem.removeprefix('sample'))],
             }
         )
     return out

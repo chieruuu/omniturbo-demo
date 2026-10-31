@@ -7,8 +7,8 @@ ROOT = Path(__file__).resolve().parent
 WORK = ROOT.parent
 VSA = WORK / "omni_turbo_vsa_36case_4tier_eval_20260917" / "outputs" / "omni_turbo_vsa_retake_36case"
 TEASER = WORK / "teaser_portrait_20261031"
-EXCLUDED_CASES = {0, 10, 14, 21, 23, 25, 27, 29, 31, 35}
-PORTRAIT_ORDER = ["07_contemporary_dance", "04_taichi_garden", "08_drummer_performance", "02_basketball_court", "03_skateboard_promenade"]
+EXCLUDED_CASES = {0, 10, 14, 16, 21, 23, 25, 27, 28, 29, 31, 33, 34, 35}
+PORTRAIT_ORDER = ["04_taichi_garden", "07_contemporary_dance", "08_drummer_performance"]
 
 
 def poster(path: str) -> str:
@@ -74,7 +74,7 @@ def teaser_data():
                 "title": row["title_en"],
                 "prompt": row["prompt"],
                 "promptLabel": "Original prompt",
-                "meta": "teaser_portrait_20261031 · audio included",
+                "meta": "Portrait generation · audio included",
                 "src": src,
                 "poster": poster(src),
                 "label": row["title_en"],
@@ -94,7 +94,7 @@ def teaser_data():
                 "title": row["title_en"],
                 "prompt": row["prompt"],
                 "promptLabel": "Original prompt",
-                "meta": "teaser_portrait_20261031 / batch2 · audio included",
+                "meta": "Portrait generation · audio included",
                 "src": src,
                 "poster": poster(src),
                 "label": row["title_en"],
@@ -104,7 +104,7 @@ def teaser_data():
 
 
 def samples_data():
-    titles = ["Blacksmith at work", "Lakeside kayaking", "Wildlife on the savanna", "Vinyl record player", "Performer at a mirror", "Wok cooking", "Café conversation", "Wedding celebration"]
+    titles = ["Blacksmith at work", "Lakeside kayaking", "Wildlife on the savanna", "Vinyl record player", "Surgeon preparing", "Wok cooking", "Chess in the square", "Wedding celebration"]
     out = []
     for path in sorted((WORK / "wandb" / "我们的").glob("*.mp4")):
         src = f"media/wandb/{path.name}"
@@ -112,9 +112,9 @@ def samples_data():
             {
                 "id": f"wandb-{path.stem}",
                 "title": titles[int(path.stem.removeprefix('sample'))],
-                "prompt": "Prompt metadata was not included in the supplied wandb folder.",
+                "prompt": "The original generation prompt is unavailable for this clip.",
                 "promptLabel": "Prompt unavailable",
-                "meta": "wandb · audio included",
+                "meta": "Joint audio–video generation",
                 "src": src,
                 "poster": poster(src),
                 "label": titles[int(path.stem.removeprefix('sample'))],
@@ -128,6 +128,7 @@ payload = {
     "portraits": teaser_data(),
     "samples": samples_data(),
     "contact": [],
+    "retake": json.loads((ROOT / "retake.json").read_text(encoding="utf-8")),
 }
-(ROOT / "data.js").write_text("window.DEMO_DATA = " + json.dumps(payload, ensure_ascii=False, separators=(",", ":")) + ";\n", encoding="utf-8")
+(ROOT / "data.js").write_text("window.DEMO_DATA = " + json.dumps(payload, ensure_ascii=False, separators=(",", ":")) + ";\n", encoding="utf-8", newline="\n")
 print(f"generated {len(payload['generation'])} VSA cases, {len(payload['portraits'])} teaser clips, {len(payload['samples'])} W&B samples")

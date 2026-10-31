@@ -1,0 +1,704 @@
+[
+  {
+    "id": "retake-00",
+    "title": "Held-out talking head 12 · Delete",
+    "prompt": "Delete the target word and regenerate the local audio-video transition.",
+    "promptLabel": "Edit instruction · operation from manifest; exact target transcript not provided",
+    "task": "delete",
+    "collection": "heldout",
+    "badge": "delete",
+    "portrait": false,
+    "window": "Edit interval: 8.790–8.890 s",
+    "meta": "Paired editing case 01 · generated audio included",
+    "videos": [
+      {
+        "src": "media/retake/00-original.mp4",
+        "poster": "posters/retake-00-original.jpg",
+        "label": "LTX-2.3 · FP8 distilled",
+        "ours": false
+      },
+      {
+        "src": "media/retake/00-omniturbo.mp4",
+        "poster": "posters/retake-00-omniturbo.jpg",
+        "label": "OmniTurbo",
+        "ours": true
+      }
+    ]
+  },
+  {
+    "id": "retake-01",
+    "title": "Held-out talking head 12 · Insert",
+    "prompt": "Insert the target word and regenerate the local audio-video segment.",
+    "promptLabel": "Edit instruction · operation from manifest; exact target transcript not provided",
+    "task": "insert",
+    "collection": "heldout",
+    "badge": "insert",
+    "portrait": false,
+    "window": "Edit interval: 5.920–6.971 s",
+    "meta": "Paired editing case 02 · generated audio included",
+    "videos": [
+      {
+        "src": "media/retake/01-original.mp4",
+        "poster": "posters/retake-01-original.jpg",
+        "label": "LTX-2.3 · FP8 distilled",
+        "ours": false
+      },
+      {
+        "src": "media/retake/01-omniturbo.mp4",
+        "poster": "posters/retake-01-omniturbo.jpg",
+        "label": "OmniTurbo",
+        "ours": true
+      }
+    ]
+  },
+  {
+    "id": "retake-02",
+    "title": "Held-out talking head 12 · Replace",
+    "prompt": "Replace the target word and regenerate the local audio-video segment.",
+    "promptLabel": "Edit instruction · operation from manifest; exact target transcript not provided",
+    "task": "replace",
+    "collection": "heldout",
+    "badge": "replace",
+    "portrait": false,
+    "window": "Edit interval: 10.680–11.620 s",
+    "meta": "Paired editing case 03 · generated audio included",
+    "videos": [
+      {
+        "src": "media/retake/02-original.mp4",
+        "poster": "posters/retake-02-original.jpg",
+        "label": "LTX-2.3 · FP8 distilled",
+        "ours": false
+      },
+      {
+        "src": "media/retake/02-omniturbo.mp4",
+        "poster": "posters/retake-02-omniturbo.jpg",
+        "label": "OmniTurbo",
+        "ours": true
+      }
+    ]
+  },
+  {
+    "id": "retake-03",
+    "title": "Held-out talking head 12 · Delete",
+    "prompt": "Delete the target word and regenerate the local audio-video transition.",
+    "promptLabel": "Edit instruction · operation from manifest; exact target transcript not provided",
+    "task": "delete",
+    "collection": "heldout",
+    "badge": "delete",
+    "portrait": false,
+    "window": "Edit interval: 4.456–4.556 s",
+    "meta": "Paired editing case 04 · generated audio included",
+    "videos": [
+      {
+        "src": "media/retake/03-original.mp4",
+        "poster": "posters/retake-03-original.jpg",
+        "label": "LTX-2.3 · FP8 distilled",
+        "ours": false
+      },
+      {
+        "src": "media/retake/03-omniturbo.mp4",
+        "poster": "posters/retake-03-omniturbo.jpg",
+        "label": "OmniTurbo",
+        "ours": true
+      }
+    ]
+  },
+  {
+    "id": "retake-04",
+    "title": "Held-out talking head 12 · Insert",
+    "prompt": "Insert the target word and regenerate the local audio-video segment.",
+    "promptLabel": "Edit instruction · operation from manifest; exact target transcript not provided",
+    "task": "insert",
+    "collection": "heldout",
+    "badge": "insert",
+    "portrait": false,
+    "window": "Edit interval: 6.860–7.780 s",
+    "meta": "Paired editing case 05 · generated audio included",
+    "videos": [
+      {
+        "src": "media/retake/04-original.mp4",
+        "poster": "posters/retake-04-original.jpg",
+        "label": "LTX-2.3 · FP8 distilled",
+        "ours": false
+      },
+      {
+        "src": "media/retake/04-omniturbo.mp4",
+        "poster": "posters/retake-04-omniturbo.jpg",
+        "label": "OmniTurbo",
+        "ours": true
+      }
+    ]
+  },
+  {
+    "id": "retake-05",
+    "title": "Held-out talking head 12 · Replace",
+    "prompt": "Replace the target word and regenerate the local audio-video segment.",
+    "promptLabel": "Edit instruction · operation from manifest; exact target transcript not provided",
+    "task": "replace",
+    "collection": "heldout",
+    "badge": "replace",
+    "portrait": false,
+    "window": "Edit interval: 7.160–8.021 s",
+    "meta": "Paired editing case 06 · generated audio included",
+    "videos": [
+      {
+        "src": "media/retake/05-original.mp4",
+        "poster": "posters/retake-05-original.jpg",
+        "label": "LTX-2.3 · FP8 distilled",
+        "ours": false
+      },
+      {
+        "src": "media/retake/05-omniturbo.mp4",
+        "poster": "posters/retake-05-omniturbo.jpg",
+        "label": "OmniTurbo",
+        "ours": true
+      }
+    ]
+  },
+  {
+    "id": "retake-06",
+    "title": "Held-out talking head 29 · Delete",
+    "prompt": "Delete the target word and regenerate the local audio-video transition.",
+    "promptLabel": "Edit instruction · operation from manifest; exact target transcript not provided",
+    "task": "delete",
+    "collection": "heldout",
+    "badge": "delete",
+    "portrait": false,
+    "window": "Edit interval: 4.549–4.649 s",
+    "meta": "Paired editing case 07 · generated audio included",
+    "videos": [
+      {
+        "src": "media/retake/06-original.mp4",
+        "poster": "posters/retake-06-original.jpg",
+        "label": "LTX-2.3 · FP8 distilled",
+        "ours": false
+      },
+      {
+        "src": "media/retake/06-omniturbo.mp4",
+        "poster": "posters/retake-06-omniturbo.jpg",
+        "label": "OmniTurbo",
+        "ours": true
+      }
+    ]
+  },
+  {
+    "id": "retake-07",
+    "title": "Held-out talking head 29 · Insert",
+    "prompt": "Insert the target word and regenerate the local audio-video segment.",
+    "promptLabel": "Edit instruction · operation from manifest; exact target transcript not provided",
+    "task": "insert",
+    "collection": "heldout",
+    "badge": "insert",
+    "portrait": false,
+    "window": "Edit interval: 2.560–3.364 s",
+    "meta": "Paired editing case 08 · generated audio included",
+    "videos": [
+      {
+        "src": "media/retake/07-original.mp4",
+        "poster": "posters/retake-07-original.jpg",
+        "label": "LTX-2.3 · FP8 distilled",
+        "ours": false
+      },
+      {
+        "src": "media/retake/07-omniturbo.mp4",
+        "poster": "posters/retake-07-omniturbo.jpg",
+        "label": "OmniTurbo",
+        "ours": true
+      }
+    ]
+  },
+  {
+    "id": "retake-08",
+    "title": "Held-out talking head 29 · Replace",
+    "prompt": "Replace the target word and regenerate the local audio-video segment.",
+    "promptLabel": "Edit instruction · operation from manifest; exact target transcript not provided",
+    "task": "replace",
+    "collection": "heldout",
+    "badge": "replace",
+    "portrait": false,
+    "window": "Edit interval: 4.100–4.575 s",
+    "meta": "Paired editing case 09 · generated audio included",
+    "videos": [
+      {
+        "src": "media/retake/08-original.mp4",
+        "poster": "posters/retake-08-original.jpg",
+        "label": "LTX-2.3 · FP8 distilled",
+        "ours": false
+      },
+      {
+        "src": "media/retake/08-omniturbo.mp4",
+        "poster": "posters/retake-08-omniturbo.jpg",
+        "label": "OmniTurbo",
+        "ours": true
+      }
+    ]
+  },
+  {
+    "id": "retake-09",
+    "title": "Held-out talking head 30 · Delete",
+    "prompt": "Delete the target word and regenerate the local audio-video transition.",
+    "promptLabel": "Edit instruction · operation from manifest; exact target transcript not provided",
+    "task": "delete",
+    "collection": "heldout",
+    "badge": "delete",
+    "portrait": false,
+    "window": "Edit interval: 2.072–2.172 s",
+    "meta": "Paired editing case 10 · generated audio included",
+    "videos": [
+      {
+        "src": "media/retake/09-original.mp4",
+        "poster": "posters/retake-09-original.jpg",
+        "label": "LTX-2.3 · FP8 distilled",
+        "ours": false
+      },
+      {
+        "src": "media/retake/09-omniturbo.mp4",
+        "poster": "posters/retake-09-omniturbo.jpg",
+        "label": "OmniTurbo",
+        "ours": true
+      }
+    ]
+  },
+  {
+    "id": "retake-10",
+    "title": "Held-out talking head 30 · Insert",
+    "prompt": "Insert the target word and regenerate the local audio-video segment.",
+    "promptLabel": "Edit instruction · operation from manifest; exact target transcript not provided",
+    "task": "insert",
+    "collection": "heldout",
+    "badge": "insert",
+    "portrait": false,
+    "window": "Edit interval: 1.180–2.178 s",
+    "meta": "Paired editing case 11 · generated audio included",
+    "videos": [
+      {
+        "src": "media/retake/10-original.mp4",
+        "poster": "posters/retake-10-original.jpg",
+        "label": "LTX-2.3 · FP8 distilled",
+        "ours": false
+      },
+      {
+        "src": "media/retake/10-omniturbo.mp4",
+        "poster": "posters/retake-10-omniturbo.jpg",
+        "label": "OmniTurbo",
+        "ours": true
+      }
+    ]
+  },
+  {
+    "id": "retake-11",
+    "title": "Held-out talking head 30 · Replace",
+    "prompt": "Replace the target word and regenerate the local audio-video segment.",
+    "promptLabel": "Edit instruction · operation from manifest; exact target transcript not provided",
+    "task": "replace",
+    "collection": "heldout",
+    "badge": "replace",
+    "portrait": false,
+    "window": "Edit interval: 7.800–8.440 s",
+    "meta": "Paired editing case 12 · generated audio included",
+    "videos": [
+      {
+        "src": "media/retake/11-original.mp4",
+        "poster": "posters/retake-11-original.jpg",
+        "label": "LTX-2.3 · FP8 distilled",
+        "ours": false
+      },
+      {
+        "src": "media/retake/11-omniturbo.mp4",
+        "poster": "posters/retake-11-omniturbo.jpg",
+        "label": "OmniTurbo",
+        "ours": true
+      }
+    ]
+  },
+  {
+    "id": "retake-18",
+    "title": "Held-out talking head 34 · Delete",
+    "prompt": "Delete the target word and regenerate the local audio-video transition.",
+    "promptLabel": "Edit instruction · operation from manifest; exact target transcript not provided",
+    "task": "delete",
+    "collection": "heldout",
+    "badge": "delete",
+    "portrait": false,
+    "window": "Edit interval: 5.859–5.959 s",
+    "meta": "Paired editing case 19 · generated audio included",
+    "videos": [
+      {
+        "src": "media/retake/18-original.mp4",
+        "poster": "posters/retake-18-original.jpg",
+        "label": "LTX-2.3 · FP8 distilled",
+        "ours": false
+      },
+      {
+        "src": "media/retake/18-omniturbo.mp4",
+        "poster": "posters/retake-18-omniturbo.jpg",
+        "label": "OmniTurbo",
+        "ours": true
+      }
+    ]
+  },
+  {
+    "id": "retake-19",
+    "title": "Held-out talking head 34 · Insert",
+    "prompt": "Insert the target word and regenerate the local audio-video segment.",
+    "promptLabel": "Edit instruction · operation from manifest; exact target transcript not provided",
+    "task": "insert",
+    "collection": "heldout",
+    "badge": "insert",
+    "portrait": false,
+    "window": "Edit interval: 8.720–9.476 s",
+    "meta": "Paired editing case 20 · generated audio included",
+    "videos": [
+      {
+        "src": "media/retake/19-original.mp4",
+        "poster": "posters/retake-19-original.jpg",
+        "label": "LTX-2.3 · FP8 distilled",
+        "ours": false
+      },
+      {
+        "src": "media/retake/19-omniturbo.mp4",
+        "poster": "posters/retake-19-omniturbo.jpg",
+        "label": "OmniTurbo",
+        "ours": true
+      }
+    ]
+  },
+  {
+    "id": "retake-20",
+    "title": "Held-out talking head 34 · Replace",
+    "prompt": "Replace the target word and regenerate the local audio-video segment.",
+    "promptLabel": "Edit instruction · operation from manifest; exact target transcript not provided",
+    "task": "replace",
+    "collection": "heldout",
+    "badge": "replace",
+    "portrait": false,
+    "window": "Edit interval: 4.660–5.202 s",
+    "meta": "Paired editing case 21 · generated audio included",
+    "videos": [
+      {
+        "src": "media/retake/20-original.mp4",
+        "poster": "posters/retake-20-original.jpg",
+        "label": "LTX-2.3 · FP8 distilled",
+        "ours": false
+      },
+      {
+        "src": "media/retake/20-omniturbo.mp4",
+        "poster": "posters/retake-20-omniturbo.jpg",
+        "label": "OmniTurbo",
+        "ours": true
+      }
+    ]
+  },
+  {
+    "id": "retake-21",
+    "title": "Real-world speaker 01 · Delete",
+    "prompt": "Delete the target word and regenerate the local audio-video transition.",
+    "promptLabel": "Edit instruction · operation from manifest; exact target transcript not provided",
+    "task": "delete",
+    "collection": "realworld",
+    "badge": "delete",
+    "portrait": true,
+    "window": "Edit interval: 1.890–1.990 s",
+    "meta": "Paired editing case 22 · generated audio included",
+    "videos": [
+      {
+        "src": "media/retake/21-original.mp4",
+        "poster": "posters/retake-21-original.jpg",
+        "label": "LTX-2.3 · FP8 distilled",
+        "ours": false
+      },
+      {
+        "src": "media/retake/21-omniturbo.mp4",
+        "poster": "posters/retake-21-omniturbo.jpg",
+        "label": "OmniTurbo",
+        "ours": true
+      }
+    ]
+  },
+  {
+    "id": "retake-22",
+    "title": "Real-world speaker 01 · Insert",
+    "prompt": "Insert the target word and regenerate the local audio-video segment.",
+    "promptLabel": "Edit instruction · operation from manifest; exact target transcript not provided",
+    "task": "insert",
+    "collection": "realworld",
+    "badge": "insert",
+    "portrait": true,
+    "window": "Edit interval: 3.800–5.060 s",
+    "meta": "Paired editing case 23 · generated audio included",
+    "videos": [
+      {
+        "src": "media/retake/22-original.mp4",
+        "poster": "posters/retake-22-original.jpg",
+        "label": "LTX-2.3 · FP8 distilled",
+        "ours": false
+      },
+      {
+        "src": "media/retake/22-omniturbo.mp4",
+        "poster": "posters/retake-22-omniturbo.jpg",
+        "label": "OmniTurbo",
+        "ours": true
+      }
+    ]
+  },
+  {
+    "id": "retake-23",
+    "title": "Real-world speaker 01 · Replace",
+    "prompt": "Replace the target word and regenerate the local audio-video segment.",
+    "promptLabel": "Edit instruction · operation from manifest; exact target transcript not provided",
+    "task": "replace",
+    "collection": "realworld",
+    "badge": "replace",
+    "portrait": true,
+    "window": "Edit interval: 7.460–8.100 s",
+    "meta": "Paired editing case 24 · generated audio included",
+    "videos": [
+      {
+        "src": "media/retake/23-original.mp4",
+        "poster": "posters/retake-23-original.jpg",
+        "label": "LTX-2.3 · FP8 distilled",
+        "ours": false
+      },
+      {
+        "src": "media/retake/23-omniturbo.mp4",
+        "poster": "posters/retake-23-omniturbo.jpg",
+        "label": "OmniTurbo",
+        "ours": true
+      }
+    ]
+  },
+  {
+    "id": "retake-24",
+    "title": "Real-world speaker 02 · Delete",
+    "prompt": "Delete the target word and regenerate the local audio-video transition.",
+    "promptLabel": "Edit instruction · operation from manifest; exact target transcript not provided",
+    "task": "delete",
+    "collection": "realworld",
+    "badge": "delete",
+    "portrait": true,
+    "window": "Edit interval: 5.210–5.310 s",
+    "meta": "Paired editing case 25 · generated audio included",
+    "videos": [
+      {
+        "src": "media/retake/24-original.mp4",
+        "poster": "posters/retake-24-original.jpg",
+        "label": "LTX-2.3 · FP8 distilled",
+        "ours": false
+      },
+      {
+        "src": "media/retake/24-omniturbo.mp4",
+        "poster": "posters/retake-24-omniturbo.jpg",
+        "label": "OmniTurbo",
+        "ours": true
+      }
+    ]
+  },
+  {
+    "id": "retake-25",
+    "title": "Real-world speaker 02 · Insert",
+    "prompt": "Insert the target word and regenerate the local audio-video segment.",
+    "promptLabel": "Edit instruction · operation from manifest; exact target transcript not provided",
+    "task": "insert",
+    "collection": "realworld",
+    "badge": "insert",
+    "portrait": true,
+    "window": "Edit interval: 1.660–2.978 s",
+    "meta": "Paired editing case 26 · generated audio included",
+    "videos": [
+      {
+        "src": "media/retake/25-original.mp4",
+        "poster": "posters/retake-25-original.jpg",
+        "label": "LTX-2.3 · FP8 distilled",
+        "ours": false
+      },
+      {
+        "src": "media/retake/25-omniturbo.mp4",
+        "poster": "posters/retake-25-omniturbo.jpg",
+        "label": "OmniTurbo",
+        "ours": true
+      }
+    ]
+  },
+  {
+    "id": "retake-26",
+    "title": "Real-world speaker 02 · Replace",
+    "prompt": "Replace the target word and regenerate the local audio-video segment.",
+    "promptLabel": "Edit instruction · operation from manifest; exact target transcript not provided",
+    "task": "replace",
+    "collection": "realworld",
+    "badge": "replace",
+    "portrait": true,
+    "window": "Edit interval: 5.720–6.260 s",
+    "meta": "Paired editing case 27 · generated audio included",
+    "videos": [
+      {
+        "src": "media/retake/26-original.mp4",
+        "poster": "posters/retake-26-original.jpg",
+        "label": "LTX-2.3 · FP8 distilled",
+        "ours": false
+      },
+      {
+        "src": "media/retake/26-omniturbo.mp4",
+        "poster": "posters/retake-26-omniturbo.jpg",
+        "label": "OmniTurbo",
+        "ours": true
+      }
+    ]
+  },
+  {
+    "id": "retake-27",
+    "title": "Real-world speaker 03 · Delete",
+    "prompt": "Delete the target word and regenerate the local audio-video transition.",
+    "promptLabel": "Edit instruction · operation from manifest; exact target transcript not provided",
+    "task": "delete",
+    "collection": "realworld",
+    "badge": "delete",
+    "portrait": true,
+    "window": "Edit interval: 3.670–3.770 s",
+    "meta": "Paired editing case 28 · generated audio included",
+    "videos": [
+      {
+        "src": "media/retake/27-original.mp4",
+        "poster": "posters/retake-27-original.jpg",
+        "label": "LTX-2.3 · FP8 distilled",
+        "ours": false
+      },
+      {
+        "src": "media/retake/27-omniturbo.mp4",
+        "poster": "posters/retake-27-omniturbo.jpg",
+        "label": "OmniTurbo",
+        "ours": true
+      }
+    ]
+  },
+  {
+    "id": "retake-28",
+    "title": "Real-world speaker 03 · Insert",
+    "prompt": "Insert the target word and regenerate the local audio-video segment.",
+    "promptLabel": "Edit instruction · operation from manifest; exact target transcript not provided",
+    "task": "insert",
+    "collection": "realworld",
+    "badge": "insert",
+    "portrait": true,
+    "window": "Edit interval: 3.280–4.298 s",
+    "meta": "Paired editing case 29 · generated audio included",
+    "videos": [
+      {
+        "src": "media/retake/28-original.mp4",
+        "poster": "posters/retake-28-original.jpg",
+        "label": "LTX-2.3 · FP8 distilled",
+        "ours": false
+      },
+      {
+        "src": "media/retake/28-omniturbo.mp4",
+        "poster": "posters/retake-28-omniturbo.jpg",
+        "label": "OmniTurbo",
+        "ours": true
+      }
+    ]
+  },
+  {
+    "id": "retake-29",
+    "title": "Real-world speaker 03 · Replace",
+    "prompt": "Replace the target word and regenerate the local audio-video segment.",
+    "promptLabel": "Edit instruction · operation from manifest; exact target transcript not provided",
+    "task": "replace",
+    "collection": "realworld",
+    "badge": "replace",
+    "portrait": true,
+    "window": "Edit interval: 2.100–2.751 s",
+    "meta": "Paired editing case 30 · generated audio included",
+    "videos": [
+      {
+        "src": "media/retake/29-original.mp4",
+        "poster": "posters/retake-29-original.jpg",
+        "label": "LTX-2.3 · FP8 distilled",
+        "ours": false
+      },
+      {
+        "src": "media/retake/29-omniturbo.mp4",
+        "poster": "posters/retake-29-omniturbo.jpg",
+        "label": "OmniTurbo",
+        "ours": true
+      }
+    ]
+  },
+  {
+    "id": "retake-30",
+    "title": "Real-world speaker 04 · Delete",
+    "prompt": "Delete the target word and regenerate the local audio-video transition.",
+    "promptLabel": "Edit instruction · operation from manifest; exact target transcript not provided",
+    "task": "delete",
+    "collection": "realworld",
+    "badge": "delete",
+    "portrait": true,
+    "window": "Edit interval: 0.850–0.950 s",
+    "meta": "Paired editing case 31 · generated audio included",
+    "videos": [
+      {
+        "src": "media/retake/30-original.mp4",
+        "poster": "posters/retake-30-original.jpg",
+        "label": "LTX-2.3 · FP8 distilled",
+        "ours": false
+      },
+      {
+        "src": "media/retake/30-omniturbo.mp4",
+        "poster": "posters/retake-30-omniturbo.jpg",
+        "label": "OmniTurbo",
+        "ours": true
+      }
+    ]
+  },
+  {
+    "id": "retake-31",
+    "title": "Real-world speaker 04 · Insert",
+    "prompt": "Insert the target word and regenerate the local audio-video segment.",
+    "promptLabel": "Edit instruction · operation from manifest; exact target transcript not provided",
+    "task": "insert",
+    "collection": "realworld",
+    "badge": "insert",
+    "portrait": true,
+    "window": "Edit interval: 3.300–5.970 s",
+    "meta": "Paired editing case 32 · generated audio included",
+    "videos": [
+      {
+        "src": "media/retake/31-original.mp4",
+        "poster": "posters/retake-31-original.jpg",
+        "label": "LTX-2.3 · FP8 distilled",
+        "ours": false
+      },
+      {
+        "src": "media/retake/31-omniturbo.mp4",
+        "poster": "posters/retake-31-omniturbo.jpg",
+        "label": "OmniTurbo",
+        "ours": true
+      }
+    ]
+  },
+  {
+    "id": "retake-32",
+    "title": "Real-world speaker 04 · Replace",
+    "prompt": "Replace the target word and regenerate the local audio-video segment.",
+    "promptLabel": "Edit instruction · operation from manifest; exact target transcript not provided",
+    "task": "replace",
+    "collection": "realworld",
+    "badge": "replace",
+    "portrait": true,
+    "window": "Edit interval: 2.100–2.740 s",
+    "meta": "Paired editing case 33 · generated audio included",
+    "videos": [
+      {
+        "src": "media/retake/32-original.mp4",
+        "poster": "posters/retake-32-original.jpg",
+        "label": "LTX-2.3 · FP8 distilled",
+        "ours": false
+      },
+      {
+        "src": "media/retake/32-omniturbo.mp4",
+        "poster": "posters/retake-32-omniturbo.jpg",
+        "label": "OmniTurbo",
+        "ours": true
+      }
+    ]
+  }
+]

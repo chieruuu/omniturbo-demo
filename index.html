@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer">
 <meta name="description" content="Anonymous supplementary videos for OmniTurbo.">
-<title>OmniTurbo · Supplementary Videos</title><link rel="stylesheet" href="style.css"><script defer src="data.js"></script><script defer src="app.js"></script>
+<title>OmniTurbo · Supplementary Videos</title><link rel="stylesheet" href="style.css?v=20261031-review2"><script defer src="data.js?v=20261031-review2"></script><script defer src="app.js?v=20261031-review2"></script>
 </head>
 <body>
 <header class="topbar"><a class="brand" href="#top"><span class="logo">O</span> OmniTurbo</a><span class="review">ANONYMOUS SUPPLEMENTARY MATERIAL</span><a href="#comparisons">Explore videos ↗</a></header>
@@ -11,24 +11,30 @@
 <section class="hero">
 <p class="eyebrow">JOINT AUDIO–VIDEO GENERATION</p>
 <h1><span>OmniTurbo</span><br>Efficient Omni Diffusion for Joint Audio-Video Generation with NVFP4-Sparsity-Distillation Co-Design</h1>
-<p class="authors">Anonymous Authors</p><p class="intro">See and hear the available evaluation videos, portrait teasers, and recorded samples.</p>
-<div class="pills"><a href="#generation">VSA evaluation</a><a href="#portraits">Portrait teaser</a><a href="#samples">W&amp;B samples</a></div>
+<p class="authors">Anonymous Authors</p><p class="intro">Explore sparse attention, human performance, joint audio–video generation, and local speech editing.</p>
+<div class="pills"><a href="#generation">Sparse attention</a><a href="#portraits">Human performance</a><a href="#samples">Audio–video generation</a><a href="#retake">Speech editing</a></div>
 <div class="hero-strip" id="hero-strip"></div><p class="hint">Videos retain their supplied audio. Use headphones and select one audio track in comparisons.</p>
 </section>
-<nav class="section-nav" id="comparisons"><a href="#generation">01 / VSA</a><a href="#portraits">02 / Teaser</a><a href="#samples">03 / W&amp;B</a></nav>
+<nav class="section-nav" id="comparisons"><a href="#generation">01 / Sparse attention</a><a href="#portraits">02 / Human performance</a><a href="#samples">03 / Audio–video generation</a><a href="#retake">04 / Speech editing</a></nav>
 <section id="generation" class="content-section">
-<div class="section-heading"><div><p class="eyebrow">01 / VSA EVALUATION</p><h2>Four attention settings, side by side.</h2></div><span class="count" id="generation-count"></span></div>
-<p class="section-description">26 selected cases, grouped by prompt and scene category. Each complete comparison shows the same seed at dense and three sparse attention settings. Use the synchronized controls to compare motion and audio. This gallery is a curated qualitative selection from the 36-case evaluation.</p>
+<div class="section-heading"><div><p class="eyebrow">01 / SPARSE ATTENTION</p><h2>Sparse Attention Comparison</h2></div><span class="count" id="generation-count"></span></div>
+<p class="section-description">22 selected cases, grouped by prompt and scene category. Each complete comparison shows the same seed at dense and three sparse attention settings. Use the synchronized controls to compare motion and audio. This gallery is a curated qualitative selection from the 36-case evaluation.</p>
 <div class="toolbar"><label>Category <select id="generation-category"><option value="all">All categories</option></select></label><label class="search-label">Search prompt <input id="generation-search" type="search" placeholder="Try snow, blacksmith, or water…"></label></div>
 <div class="cards" id="generation-cards"></div><div class="pagination" id="generation-pagination"></div>
 </section>
 <section id="portraits" class="content-section">
-<div class="section-heading"><div><p class="eyebrow">02 / PORTRAIT TEASER</p><h2>Full-body motion in portrait view.</h2></div><span class="count">5 videos · original prompts</span></div>
-<p class="section-description">Dance, tai chi, music, and sports in five selected portrait clips. Expand the prompt below each video to read the original generation instructions.</p><div class="cards single-grid" id="portraits-cards"></div>
+<div class="section-heading"><div><p class="eyebrow">02 / HUMAN PERFORMANCE</p><h2>Human Motion and Performance</h2></div><span class="count">3 videos · original prompts</span></div>
+<p class="section-description">Tai chi, contemporary dance, and drumming in three selected portrait clips. Expand the prompt below each video to read the original generation instructions.</p><div class="cards single-grid" id="portraits-cards"></div>
 </section>
 <section id="samples" class="content-section">
-<div class="section-heading"><div><p class="eyebrow">03 / RECORDED SAMPLES</p><h2>W&amp;B samples.</h2></div><span class="count">8 videos</span></div>
+<div class="section-heading"><div><p class="eyebrow">03 / AUDIO–VIDEO GENERATION</p><h2>Joint Audio–Video Generation</h2></div><span class="count">8 videos</span></div>
 <p class="section-description">Eight audio–video scenes from the supplied recordings. Titles describe the visible scenes; original prompt metadata is unavailable.</p><div class="cards single-grid" id="samples-cards"></div>
+</section>
+<section id="retake" class="content-section">
+<div class="section-heading"><div><p class="eyebrow">04 / LOCAL SPEECH EDITING</p><h2>Speech Editing: LTX-2.3 vs. OmniTurbo</h2></div><span class="count" id="retake-count"></span></div>
+<p class="section-description">Paired retake results for word deletion, insertion, and replacement. The official LTX-2.3 FP8 distilled baseline and OmniTurbo use the same editing case. Select an operation and use synchronized playback to compare the local audio–video transition. These are selected qualitative examples.</p>
+<div class="toolbar"><label>Edit operation <select id="retake-task"><option value="all">All operations</option><option value="delete">Deletion</option><option value="insert">Insertion</option><option value="replace">Replacement</option></select></label></div>
+<div class="cards" id="retake-cards"></div><div class="pagination" id="retake-pagination"></div>
 </section>
 <footer><a class="brand" href="#top"><span class="logo">O</span> OmniTurbo</a><p>Anonymous supplementary videos · No external analytics.</p><a href="#top">Back to top ↑</a></footer>
 </main><div role="status" aria-live="polite" id="status" class="toast" hidden></div>

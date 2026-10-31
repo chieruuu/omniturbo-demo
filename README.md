@@ -1,9 +1,10 @@
 # OmniTurbo Supplementary Videos
 
-Built only from the supplied `omni_turbo_vsa_36case_4tier_eval_20260917`, `teaser_portrait_20261031`, and `wandb` folders.
+- Sparse Attention Comparison: 22 selected cases, each retaining all four settings (88 videos).
+- Human Motion and Performance: Garden tai chi, Contemporary dance, Drummer performance (3 videos).
+- Joint Audio–Video Generation: 8 landscape-format examples.
+- Speech Editing: LTX-2.3 vs. OmniTurbo: 27 paired cases (54 videos), grouped by deletion, insertion, and replacement.
 
-- VSA evaluation: 26 selected prompts × four attention settings (104 videos), grouped by prompt and category. Every retained prompt keeps all four settings.
-- Portrait teaser: 5 selected videos with the supplied original prompts.
-- W&B samples: all 8 videos; prompt metadata was not supplied and is labeled accordingly.
+153 videos in total. Original prompts are shown where supplied; operation-level editing instructions are labeled separately from unavailable exact target transcripts. Retake clips come from `official_vs_our_retake36`; LTX-2.3 baseline files are remuxed and OmniTurbo files are encoded to browser-compatible H.264 CRF 18 at original resolution, preserving the supplied audio. No changes are made to source artifacts.
 
-The gallery contains 117 videos. Selection used four temporal samples per supplied clip (5%, 33%, 66%, 94%) to inspect visible artifacts, subject continuity, and prompt adherence; this is a curated qualitative gallery, not the full evaluation. Original prompts and audio tracks are retained where supplied. W&B titles are scene descriptions, not reconstructed prompts. No quantitative claims are derived from this selection.
+The gallery is a qualitative selection after reviewing temporal samples, not the full benchmark or a quantitative quality assessment.

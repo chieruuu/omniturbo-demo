@@ -6,7 +6,7 @@ const pretty=s=>s.replaceAll('_',' ').replace(/\b\w/g,x=>x.toUpperCase());
 const panel=v=>`<div class="video-panel"><div class="video-label"><i class="dot"></i>${esc(v.label)}</div><video controls playsinline preload="none" poster="${esc(v.poster)}" data-src="${esc(v.src)}" aria-label="${esc(v.label)}"></video><p class="media-error" hidden>Video unavailable. Please check the uploaded media file.</p></div>`;
 const controls=vs=>`<div class="controls"><button class="primary" data-action="play">▶ Play together</button><button data-action="pause">Pause</button><button data-action="restart">↺ Restart</button><span class="sync-note">Seeking one video aligns the others.</span><label>Audio<select class="audio-select" aria-label="Choose audio"><option value="-1">Muted</option>${vs.map((v,i)=>`<option value="${i}" ${i===vs.length-1?'selected':''}>${esc(v.label)}</option>`).join('')}</select></label></div>`;
 const prompt=(text,label='Original prompt')=>`<div class="prompt"><span class="prompt-label">${esc(label)}</span>${esc(text)}</div>`;
-function card(c){const vs=c.videos||[];return `<article class="card comparison" data-case="${esc(c.id)}"><div class="card-top"><div><h3>${esc(c.title)}</h3><div class="meta">${esc(c.meta||'')}</div></div>${c.badge?`<span class="badge">${esc(c.badge)}</span>`:''}</div>${prompt(c.prompt,c.promptLabel)}<div class="video-grid ${vs.length===4?'four':vs.length===3?'three':''}" style="--cols:${vs.length}">${vs.map(panel).join('')}</div>${c.window?`<p class="edit-window">${esc(c.window)}</p>`:''}${vs.length>1?controls(vs):''}</article>`;}
+function card(c){const vs=c.videos||[];return `<article class="card comparison" data-case="${esc(c.id)}"><div class="card-top"><div><h3>${esc(c.title)}</h3><div class="meta">${esc(c.meta||'')}</div></div>${c.badge?`<span class="badge">${esc(c.badge)}</span>`:''}</div>${prompt(c.prompt,c.promptLabel)}<div class="video-grid ${vs.length===4?'four':vs.length===3?'three':'two'+(c.portrait?' portrait-pair':'')}" style="--cols:${vs.length}">${vs.map(panel).join('')}</div>${c.window?`<p class="edit-window">${esc(c.window)}</p>`:''}${vs.length>1?controls(vs):''}</article>`;}
 function singleCard(c){const v={src:c.src,poster:c.poster,label:c.label||c.title};return `<article class="card comparison single" data-case="${esc(c.id)}"><div class="card-top"><div><h3>${esc(c.title)}</h3><div class="meta">${esc(c.meta||'')}</div></div></div><div class="video-grid" style="--cols:1">${panel(v)}</div><details><summary>${esc(c.promptLabel||'Original prompt')}</summary><p>${esc(c.prompt)}</p></details></article>`;}
 let toastTimer;function notify(t){$('#status').textContent=t;$('#status').hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('#status').hidden=true,5000);}
 function ensure(v){if(!v.getAttribute('src')){v.preload='auto';v.src=v.dataset.src;v.load();}}
@@ -23,3 +23,15 @@ $('#hero-strip').innerHTML=D.portraits.slice(0,3).map(c=>`<a class="hero-clip" h
 function renderSingles(id,items){$(`#${id}-cards`).innerHTML=items.map(singleCard).join('');wire($(`#${id}-cards`));}
 renderSingles('portraits',D.portraits);renderSingles('samples',D.samples);
 const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.querySelectorAll('video').forEach(v=>{if(v.dataset.src)ensure(v);});io.unobserve(e.target);}}),{rootMargin:'150px'});const observe=()=>document.querySelectorAll('.comparison:not([data-observed])').forEach(c=>{c.dataset.observed='1';io.observe(c);});observe();new MutationObserver(observe).observe(document.querySelector('main'),{childList:true,subtree:true});
+
+let retakePage=0;
+function renderRetake(){
+ const selected=D.retake.filter(c=>$('#retake-task').value==='all'||c.task===$('#retake-task').value);
+ const size=4,pages=Math.max(1,Math.ceil(selected.length/size));retakePage=Math.min(retakePage,pages-1);
+ const box=$('#retake-cards');box.querySelectorAll('video').forEach(v=>v.pause());
+ box.innerHTML=selected.slice(retakePage*size,(retakePage+1)*size).map(card).join('');wire(box);
+ $('#retake-pagination').innerHTML=`<button data-dir="-1" ${retakePage===0?'disabled':''}>← Previous</button><span>${retakePage*size+1}–${Math.min((retakePage+1)*size,selected.length)} of ${selected.length} cases</span><button data-dir="1" ${retakePage>=pages-1?'disabled':''}>Next →</button>`;
+ $('#retake-pagination').querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{retakePage+=Number(b.dataset.dir);renderRetake();box.scrollIntoView({block:'start',behavior:'instant'});}));
+}
+$('#retake-count').textContent=`${D.retake.length} paired cases`;
+$('#retake-task').addEventListener('change',()=>{retakePage=0;renderRetake();});renderRetake();

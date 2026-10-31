@@ -26,5 +26,5 @@ function renderGeneration(){const filtered=D.generation.filter(generationFilter)
 $('#generation-category').addEventListener('change',()=>{generationPage=0;renderGeneration();});$('#generation-search').addEventListener('input',()=>{generationPage=0;renderGeneration();});renderGeneration();
 $('#hero-strip').innerHTML=D.portraits.slice(0,4).map(c=>`<a class="hero-clip" href="#portraits"><img src="${esc(c.poster)}" alt="${esc(c.title)}"><span>${esc(c.title)} ↗</span></a>`).join('');
 function renderSingles(id,items){$(`#${id}-cards`).innerHTML=items.map(singleCard).join('');wire($(`#${id}-cards`));}
-renderSingles('portraits',D.portraits);renderSingles('samples',D.samples);renderSingles('contact',D.contact);
+renderSingles('portraits',D.portraits);renderSingles('samples',D.samples);
 const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.querySelectorAll('video').forEach(v=>{if(v.dataset.src)ensure(v);});io.unobserve(e.target);}}),{rootMargin:'150px'});const observe=()=>document.querySelectorAll('.comparison:not([data-observed])').forEach(c=>{c.dataset.observed='1';io.observe(c);});observe();new MutationObserver(observe).observe(document.querySelector('main'),{childList:true,subtree:true});

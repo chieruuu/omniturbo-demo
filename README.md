@@ -1,5 +1,11 @@
 # OmniTurbo Supplementary Videos
 
+## View the videos
+
+Open the **Website** link in the upper-right corner of this page to view and play the supplementary videos. The `index.html` file shown in the repository browser is a source file view; use **Website** to open the playable gallery.
+
+If the Website link is not visible, open the anonymous project page and choose **View page** from the project menu.
+
 - Sparse Attention Comparison: 22 selected cases, each retaining all four settings (88 videos).
 - Human Motion and Performance: Garden tai chi, Contemporary dance, Drummer performance (3 videos).
 - Joint Audio–Video Generation: 8 landscape-format examples.

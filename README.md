@@ -2,7 +2,11 @@
 
 ## View the videos
 
-Open the **Website** link in the upper-right corner of this page to view and play the supplementary videos. The `index.html` file shown in the repository browser is a source file view; use **Website** to open the playable gallery.
+Click **Website** in the upper-right corner of the anonymous repository page to open the video gallery. Look for this button:
+
+![Website button: globe icon followed by Website](docs/website-button.png)
+
+The `index.html` file shown in the repository browser is a source file view; use **Website** to open the playable gallery.
 
 If the Website link is not visible, open the anonymous project page and choose **View page** from the project menu.
 
